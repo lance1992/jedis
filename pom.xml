@@ -45,8 +45,10 @@
   </scm>
 
 	<properties>
-		<redis-hosts>localhost:6379,localhost:6380,localhost:6381,localhost:6382,localhost:6383,localhost:6384,localhost:6385</redis-hosts>
-		<sentinel-hosts>localhost:26379,localhost:26380,localhost:26381</sentinel-hosts>
+		<!--<redis-hosts>localhost:6379,localhost:6380,localhost:6381,localhost:6382,localhost:6383,localhost:6384,localhost:6385</redis-hosts>-->
+		<redis-hosts>172.17.102.190:6380</redis-hosts>
+		<!--<sentinel-hosts>localhost:26379,localhost:26380,localhost:26381</sentinel-hosts>-->
+		<sentinel-hosts>172.17.102.190:26380,172.17.102.190:26381,172.17.102.190:26382</sentinel-hosts>
 		<cluster-hosts>localhost:7379,localhost:7380,localhost:7381,localhost:7382,localhost:7383,localhost:7384,localhost:7385</cluster-hosts>
     	<github.global.server>github</github.global.server>
 	</properties>

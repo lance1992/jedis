@@ -41,6 +41,7 @@ public class AllKindOfValuesCommandsTest extends JedisCommandTestBase {
   @Test
   public void ping() {
     String status = jedis.ping();
+    System.out.println(status);
     assertEquals("PONG", status);
   }
 
